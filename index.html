@@ -4,10 +4,33 @@
         <title>Etch a Sketch</title>
         <link rel="stylesheet" href="styles.css">
         <script type="javascript" src="etchasketch.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
         
     </head>
     <body>
         <h1>Etch A Sketch</h1>
-        <div id="#container"></div>
+        <div id="container">
+            <div id="panel">
+                <div class="slidecontainer">
+                    <div class="slider">
+                        <label>Elements</label>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <p id="slider-value">0</p>
+                    </div>
+                    <button>Update</button>
+                </div>
+                <div class="resetcontainer">
+                    <button>Reset</button>
+                </div>
+            </div>
+            <div id="canvas">
+                <div class="canvas-element"></div>
+                <div class="canvas-element"></div>
+                <div class="canvas-element"></div>
+                <div class="canvas-element"></div>
+            </div>
+        </div>
     </body>
 </html>

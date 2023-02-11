@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    font-family: "Satisfy", sans-serif;
+    font-size: 5rem;
+    color: #f28482;
+    text-align: center;
+}
+
+body {
+    background-color: #f7ede2;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #50645f;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+#panel {
+    padding: 0 1rem 0 1rem;
+}
+
+.slidecontainer button {
+    margin-top: 1rem;
+}
+
+.slider {
+    display: flex;
+    gap: 1rem;
+    align-content: flex-start;
+    align-items: center;
+}
+
+#canvas {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-color: #edede9;
+}
+
+#canvas-element {
+    border: 1px;
+    background-color: white;
+    border-color: #edede9;
+}
