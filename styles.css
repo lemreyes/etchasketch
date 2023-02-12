@@ -54,7 +54,31 @@ body {
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: #50645f;
+    padding: 3rem;
 }
+
+button {
+    background-color: #f6bd60; /* Green */
+    border: none;
+    color: #50645f;
+    padding: 0.5rem 1rem;
+    width: 6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #50645f;
+    color: #f6bd60
+}
+
+button:active {
+    transform: scale(0.97);
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+  }
 
 #container {
     display: flex;
@@ -62,10 +86,13 @@ body {
     gap: 2rem;
     width: 80%;
     margin: auto;
+    margin-top: 3rem;
 }
 
 #panel {
-    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem 0 1rem;
 }
 
 .slidecontainer button {
@@ -79,16 +106,31 @@ body {
     align-items: center;
 }
 
-#canvas {
-    display: grid;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    border-color: #edede9;
+.resetcontainer {
+    margin-top: 3rem;
 }
 
-#canvas-element {
-    border: 1px;
+.resetcontainer button {
+    background-color: #f28482;
+    color: #50645f
+}
+
+.resetcontainer button:hover {
+    background-color: #f5cac3;
+    color: #50645f
+}
+
+#canvas {
+    display: grid;
+    width: 70vh;
+    height: 70vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: white;
-    border-color: #edede9;
+    border: 3px solid #d4d4d4;
+}
+
+.canvas-element {
+    border: 1px solid #ececec;;
+    background-color: white;
 }
