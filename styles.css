@@ -76,9 +76,7 @@ button:hover {
 
 button:active {
     transform: scale(0.97);
-            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-            /* Lowering the shadow */
-  }
+}
 
 #container {
     display: flex;
@@ -104,6 +102,10 @@ button:active {
     gap: 1rem;
     align-content: flex-start;
     align-items: center;
+}
+
+#slider-value {
+    width: 2rem;
 }
 
 .resetcontainer {
