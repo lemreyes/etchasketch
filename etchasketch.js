@@ -15,6 +15,10 @@ function generateCanvasElement() {
             const canvasElement = document.createElement("div");
             canvasElement.className = "canvas-element";
             canvas.appendChild(canvasElement);
+
+            canvasElement.addEventListener("click", () => {
+                canvasElement.style.backgroundColor = "black";
+            }, false);
         }
     }
 
@@ -24,7 +28,6 @@ function generateCanvasElement() {
 }
 
 // slider functionality
-
 const sizeSlider = document.getElementById('size-slider');
 sizeSlider.addEventListener("input", () => {
     const sizeValue = document.getElementById('slider-value')
