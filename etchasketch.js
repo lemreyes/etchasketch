@@ -1,3 +1,5 @@
+let mouseIsDown = false;
+
 function generateCanvasElement() {
     const canvas = document.getElementById('canvas');
     console.log(canvas);
@@ -16,9 +18,23 @@ function generateCanvasElement() {
             canvasElement.className = "canvas-element";
             canvas.appendChild(canvasElement);
 
-            canvasElement.addEventListener("click", () => {
+            canvasElement.addEventListener("mousedown", () => {
+                mouseIsDown = true;
                 canvasElement.style.backgroundColor = "black";
-            }, false);
+            });
+
+            canvasElement.addEventListener("mouseup", () => {
+                mouseIsDown = false;
+            });
+
+            canvasElement.addEventListener("mouseover", () => {
+                if (mouseIsDown === true) {
+                    canvasElement.style.backgroundColor = "black";
+                } else {
+                    // do nothing
+                }
+
+            });
         }
     }
 
