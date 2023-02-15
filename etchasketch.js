@@ -68,3 +68,7 @@ window.addEventListener("load", generateCanvasElement);
 // canvas update
 const updateButton = document.getElementById('updateBtn');
 updateButton.addEventListener("click", generateCanvasElement);
+
+// reset button
+const resetButton = document.getElementById('resetBtn');
+resetButton.addEventListener("click", generateCanvasElement);
