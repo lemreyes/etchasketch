@@ -1,5 +1,16 @@
 let mouseIsDown = false;
 
+function updateClassName(currentClassName) {
+    const LVL_STRING = "level";  
+    let x = currentClassName.slice(-1);
+    let num_x = parseInt(x);
+    if (num_x < 9) {
+        num_x++;
+    }
+        
+    return LVL_STRING + num_x;
+}
+
 function generateCanvasElement() {
     const canvas = document.getElementById('canvas');
     console.log(canvas);
@@ -15,12 +26,12 @@ function generateCanvasElement() {
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
             const canvasElement = document.createElement("div");
-            canvasElement.className = "canvas-element";
+            canvasElement.className = "level0";
             canvas.appendChild(canvasElement);
 
             canvasElement.addEventListener("mousedown", () => {
                 mouseIsDown = true;
-                canvasElement.style.backgroundColor = "black";
+                canvasElement.className = updateClassName(canvasElement.className);
             });
 
             canvasElement.addEventListener("mouseup", () => {
@@ -29,7 +40,7 @@ function generateCanvasElement() {
 
             canvasElement.addEventListener("mouseover", () => {
                 if (mouseIsDown === true) {
-                    canvasElement.style.backgroundColor = "black";
+                    canvasElement.className = updateClassName(canvasElement.className);
                 } else {
                     // do nothing
                 }

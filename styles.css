@@ -132,7 +132,43 @@ button:active {
     border: 3px solid #d4d4d4;
 }
 
-.canvas-element {
-    border: 1px solid #ececec;;
-    background-color: white;
+.level0 {
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.level1 {
+    background-color: #dddddd;
+}
+
+.level2 {
+    background-color: #bbbbbb;
+}
+
+.level3 {
+    background-color: #999999;
+}
+
+.level4 {
+    background-color: #777777;
+}
+
+.level5 {
+    background-color: #555555;
+}
+
+.level6 {
+    background-color: #444444;
+}
+
+.level7 {
+    background-color: #333333;
+}
+
+.level8 {
+    background-color: #222222;
+}
+
+.level9 {
+    background-color: #000000;
 }
